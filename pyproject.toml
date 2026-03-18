@@ -9,3 +9,5 @@ dependencies = [
     "ipykernel>=7.2.0",
     "pytmle>=0.4.2",
 ]
+[tool.setuptools.packages.find]
+where = ["src"]
