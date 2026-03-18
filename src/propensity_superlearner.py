@@ -3,7 +3,10 @@ from pytmle.get_initial_estimates import fit_propensity_super_learner
 
 
 def estimate_propensity(df, col_group = 'group', calibration_method = 'isotonic'):
+    """ Placeholder / workaround for superlearner implementation
     
+    ToDo: Exchange by R4R superlearner
+    """
     group = df["col_group"].to_numpy()
     X = df.drop(columuns=[col_group]).to_numpy(dtype=float)
     
