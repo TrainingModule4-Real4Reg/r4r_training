@@ -6,5 +6,6 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "causalml>=0.16.0",
+    "ipykernel>=7.2.0",
     "pytmle>=0.4.2",
 ]
