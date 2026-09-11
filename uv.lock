@@ -2675,7 +2675,7 @@ wheels = [
 [[package]]
 name = "r4r-training"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "causalml" },
     { name = "ipykernel" },

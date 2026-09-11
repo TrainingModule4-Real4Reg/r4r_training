@@ -26,7 +26,7 @@ the VS Code terminal, but you only need to install it once on your computer.
     use Git.
 2. Open **VS Code**.
 3. Select **File > Open Folder...** and select the `r4r-training` folder. Make
-    sure the Explorer shows `pyproject.toml`, `uv.lock`, `data`, and `training`.
+    sure the Explorer shows `pyproject.toml`, `uv.lock`, `data`, and `notebooks`.
 4. Select **Terminal > New Terminal**. A terminal opens at the bottom of VS
     Code. All commands below should be entered there.
 5. Create the course environment by running:
