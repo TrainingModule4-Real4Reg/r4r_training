@@ -2,10 +2,8 @@ from pytmle import PyTMLE
 from pytmle.get_initial_estimates import fit_propensity_super_learner
 
 
-def estimate_propensity(df, col_group = 'group', calibration_method = 'isotonic'):
+def estimate_propensity(df, col_group = 'group', calibration_method = 'isotonic', base_learners=None):
     """ Placeholder / workaround for superlearner implementation
-    
-    ToDo: Exchange by R4R superlearner
     """
     group = df["col_group"].to_numpy()
     X = df.drop(columuns=[col_group]).to_numpy(dtype=float)
@@ -13,7 +11,7 @@ def estimate_propensity(df, col_group = 'group', calibration_method = 'isotonic'
     propensity_scores_1,_,_ = fit_propensity_super_learner(
         X, 
         group, 
-        base_learners=None, 
+        base_learners=base_learners, 
         verbose=0, 
         cv_folds=8, 
         return_model=False, 

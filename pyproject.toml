@@ -7,7 +7,10 @@ requires-python = ">=3.12"
 dependencies = [
     "causalml>=0.16.0",
     "ipykernel>=7.2.0",
+    "matplotlib",
+    "pandas",
     "pytmle>=0.4.2",
+    "seaborn",
 ]
 [tool.setuptools.packages.find]
 where = ["src"]
